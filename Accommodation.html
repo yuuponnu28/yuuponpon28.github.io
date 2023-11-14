@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U TRAVEL</title>
+    
+    <link rel="stylesheet" type="text/css" href="yuuponpon28.github.io/css/base.css">
+    <link rel="stylesheet" type="text/css" href="yuuponpon28.github.io/css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="yuuponpon28.github.io/css/site.css">
+    <link rel="stylesheet" type="text/css" href="yuuponpon28.github.io/css/home.css">
+    <link rel="stylesheet" type="text/css" href="yuuponpon28.github.io/css/accom.css" />
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Pacifico&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Pacifico&family=Quicksand:wght@300&family=Sriracha&display=swap" rel="stylesheet">
+ 
+   <script src="https://kit.fontawesome.com/be4881beea.js" crossorigin="anonymous"></script>  
+  
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">   
+</head>
+  <body>
+    <div class="bg">
+      <header>
+          <div class="newheader">
+              <div class="menubar-top">
+                  <h3>U TRAVEL</h3>
+                  <p>Canadian World Heritage Travel Agency</p>
+              </div>
+          </div>
+          <div class="newheader2">
+              <div class="menubar-bottom">
+                  <a href="yuuponpon28.github.io/index.html" id="menucolor">Home</a>
+                  <a href="yuuponpon28.github.io/Destination.html" id="menucolor">Destination</a>
+                  <a href="yuuponpon28.github.io/Accommodation.html" id="menucolor">Accommodation</a>
+                  <a href="yuuponpon28.github.io/Cuisine.html" id="menucolor">Cuisine</a>
+                  <a href="yuuponpon28.github.io/ContactUs.html" id="menucolor">Contact us</a>
+              </div>
+          </div>
+      </header>
+        <div>
+          <main role="main" class="pb-3">
+
+            
+            <div class="accom-title">
+              <h2>Accommodation</h2>
+            </div>            
+            <div class="accom-list-container">
+                    <input type="radio" id="All" name="categories" value="All" checked>
+                    <ol class="filters">
+                        <li><i class="fa-solid fa-filter"></i></li>
+                        <li><label for="All" id="allfilter">All</label></li>
+                    </ol>
+                    <input type="radio" id="Alberta" name="categories" value="Alberta">
+                    <input type="radio" id="Ontario" name="categories" value="Ontario">
+                    <input type="radio" id="Quebec" name="categories" value="Quebec">
+                    <input type="radio" id="NewFoundLand" name="categories" value="New Found Land">
+                    <input type="radio" id="NovaScotia" name="categories" value="Nova Scotia">
+                    <input type="radio" id="BritishColumbia" name="categories" value="British Columbia">
+                    <input type="radio" id="Manitoba" name="categories" value="Manitoba">
+                    <input type="radio" id="NorthWest" name="categories" value="Northwest Territories">
+                    <input type="radio" id="Yukon" name="categories" value="Yukon">
+                    <ol class="filters">
+                        <li><label for="Alberta">Alberta</label></li>
+                        <li><label for="Ontario">Ontario</label></li>
+                        <li><label for="Quebec">Quebec</label></li>
+                        <li><label for="NewFoundLand">NewFoundLand</label></li>
+                        <li><label for="NovaScotia">Nova Scotia</label></li>
+                        <li><label for="BritishColumbia">British Columbia</label></li>
+                        <li><label for="Manitoba">Manitoba</label></li>
+                        <li><label for="NorthWest">NorthWest</label></li>
+                        <li><label for="Yukon">Yukon</label></li>
+                    </ol>
+                    <input type="radio" id="10" name="categories" value="10">
+                    <input type="radio" id="100" name="categories" value="100">
+                    <input type="radio" id="200" name="categories" value="200">
+                    <input type="radio" id="300" name="categories" value="300">
+                    <input type="radio" id="400" name="categories" value="400">
+                    <input type="radio" id="500" name="categories" value="500">
+                    <input type="radio" id="600" name="categories" value="600">
+                    <ol class="filters">
+                        @* <li><i class="fa-solid fa-filter"></i></li> *@
+                        @* <li><label for="All">All</label></li> *@
+                        <li><label for="10">Under CA$100</label></li>
+                        <li><label for="100">CA$100~</label></li>
+                        <li><label for="200">CA$200~</label></li>
+                        <li><label for="300">CA$300~</label></li>
+                        <li><label for="400">CA$400~</label></li>
+                        <li><label for="500">CA$500~</label></li>
+                        <li><label for="600">CA$600~</label></li>
+                    </ol>
+                    
+                    <input type="radio" id="3" name="categories" value="3">
+                    <input type="radio" id="4" name="categories" value="4">
+                    <input type="radio" id="4.5" name="categories" value="4.5">
+                    <input type="radio" id="5" name="categories" value="5">
+                    <ol class="filters">
+                        <li><label for="3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></label></li>
+                        <li><label for="4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></label></li>
+                        <li><label for="4.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></label></li>
+                        <li><label for="5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></label></li>
+                    </ol>
+                      <div class="accom-line"></div>
+                      <ol class="targets">
+                         <!--Accom1-->
+                        <li class="accom-card" data-category="NewFoundLand 100 4">
+                                <img src="yuuponpon28.github.io/images/lans_hotel.png" alt="Snorri Cabins">
+                                <h4>Snorri Cabins</h4> 
+                                <p>Newfoundland and Labrador</p>
+                                <p class="price">CA$139~</p>
+                                <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                                <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a>            
+                        </li>
+                     <!--Accom2-->
+                    <li class="accom-card" data-category="NewFoundLand 100 3">            
+                            <img src="yuuponpon28.github.io/images/lans_hotel2.png" alt="JThe Viking Lodge">            
+                            <h4>The Viking Lodge</h4>               
+                           <p>Newfoundland and Labrador</p>
+                            <p class="price">CA$177~</p>
+                            <p>3.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        
+                    </li>
+                    <!--Accom3-->
+                   <li class="accom-card" data-category="NewFoundLand 100 4">            
+                            <img src="yuuponpon28.github.io/images/lans_hotel3.png" alt="Burnt Cape Cabins">                            
+                            <h4>Burnt Cape Cabins</h4>               
+                           <p>Newfoundland and Labrador</p>
+                            <p class="price">CA$169~</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        
+                    </li>     
+                    <!--Accom4-->
+                    <li class="accom-card" data-category="NorthWest 100 4">            
+                            <img src="yuuponpon28.github.io/images/north_hotel.png" alt="Bannockland Inn">                           
+                            <h4>Bannockland Inn</h4>               
+                           <p>NorthWest</p>
+                            <p class="price">CA$195~</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                       
+                    </li>  
+                    <!--Accom5-->
+                    <li class="accom-card" data-category="Alberta 10 4">            
+                            <img src="yuuponpon28.github.io/images/dinosaur_hotel.png" alt="Days Inn by Wyndham Redwater">            
+                            <h4>Days Inn by Wyndham Redwater</h4>               
+                           <p>Alberta</p>
+                            <p class="price">CA$88~</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                    </li>
+                    <!--Accom6-->
+                    <li class="accom-card" data-category="Alberta 100 4">            
+                            <img src="yuuponpon28.github.io/images/dinosaur_hotel2.png" alt="Ramada by Wyndham Brooks">            
+                            <h4>Ramada by Wyndham Brooks</h4>               
+                           <p>Alberta</p>
+                            <p class="price">CA$179~</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                    </li>
+                    <!--Accom7-->
+                    <li class="accom-card" data-category="Alberta 100 4">            
+                            <img src="yuuponpon28.github.io/images/dinosaur_hotel3.png" alt="Canalta Brooks">            
+                            <h4>Canalta Brooks</h4>               
+                           <p>Alberta</p>
+                            <p class="price">CA$164~</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                    </li>
+                    <!--Accom8-->
+                        <li class="accom-card" data-category="Yukon 100 3">
+                            <img src="yuuponpon28.github.io/images/kluane_hotel.png" alt="Alcan Motor Inn">                                
+                                <h4>Alcan Motor Inn</h4>               
+                               <p>Yukon</p>
+                            <p class="price">CA$144~</p>
+                            <p>3.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                                <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom9-->
+                        <li class="accom-card" data-category="Yukon 200 4">
+                            <img src="yuuponpon28.github.io/images/EdgewaterHotel.png" alt="Edgewater Hotel">                                
+                                <h4>Edgewater Hotel</h4>               
+                               <p>Yukon</p>
+                            <p class="price">CA$259~</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom10-->
+                        <li class="accom-card" data-category="BritishColumbia 200 4.5">
+                            <img src="yuuponpon28.github.io/images/PrestigeOceanfrontResort.png" alt="Prestige Oceanfront Resort">                                
+                                <h4>Prestige Oceanfront Resort</h4>               
+                               <p>British Columbia</p>
+                            <p class="price">CA$295~</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom11-->
+                        <li class="accom-card" data-category="Alberta 600 4">
+                            <img src="yuuponpon28.github.io/images/LakeLouiseInn.png" alt="Lake Louise Inn">                                
+                            <h4>Lake Louise Inn</h4>               
+                            <p>Alberta</p>
+                            <p class="price">CA$640~</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom12-->
+                        <li class="accom-card" data-category="Alberta 500 4">
+                            <img src="yuuponpon28.github.io/images/MountRobsonInn.png" alt="Mount Robson Inn">                               
+                            <h4>Mount Robson Inn</h4>               
+                            <p>Alberta</p>
+                            <p class="price">CA$561~</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom13-->
+                        <li class="accom-card" data-category="Alberta 300 4.5">
+                            <img src="yuuponpon28.github.io/images/FairmontHotelMacdonald.png" alt="Fairmont Hotel Macdonald">                             
+                                <h4>Fairmont Hotel Macdonald</h4>               
+                               <p>Alberta</p>
+                            <p class="price">CA$359~</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                                <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom14-->
+                        <li class="accom-card" data-category="Ontario 300 4.5">
+                            <img src="yuuponpon28.github.io/images/MerrillHouse.png" alt="Merrill House">                          
+                                <h4>Merrill House</h4>               
+                               <p>Ontario</p>
+                            <p class="price">CA$326~</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                                <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom5-->
+                        <li class="accom-card" data-category="Ontario 600 4">
+                            <img src="yuuponpon28.github.io/images/MarriottTheRosseau.png" alt="JW Marriott The Rosseau Muskoka Resort & Spa">                               
+                                <h4>JW Marriott The Rosseau Muskoka Resort & Spa</h4>               
+                               <p>Ontario</p>
+                            <p class="price">CA$619~</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                                <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom16-->
+                        <li class="accom-card" data-category="Ontario 200 4.5">
+                            <img src="yuuponpon28.github.io/images/HiltonGardenInn.png" alt="Hilton Garden Inn Niagara-on-the-Lake">                              
+                                <h4>Hilton Garden Inn Niagara-on-the-Lake</h4>               
+                               <p>Ontario</p>
+                            <p class="price">CA$201~</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                                <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom17-->
+                        <li class="accom-card" data-category="Quebec 200 4">
+                            <img src="yuuponpon28.github.io/images/HotelLeBonneEntente.png" alt="Hotel Le Bonne Entente">                               
+                                <h4>Hotel Le Bonne Entente</h4>               
+                               <p>Quebec</p>
+                            <p class="price">CA$289~</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                                <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom18-->
+                        <li class="accom-card" data-category="Quebec 500 5">
+                            <img src="yuuponpon28.github.io/images/LeManoirdAuteuil.png" alt="Le Manoir d'Auteuil">                              
+                                <h4>Le Manoir d'Auteuil</h4>               
+                               <p>Quebec</p>
+                            <p class="price">CA$596~</p>
+                            <p>5.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                                <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom19-->
+                        <li class="accom-card" data-category="Quebec 600 5">
+                            <img src="yuuponpon28.github.io/images/AubergeSaint-Antoine.png" alt="Auberge Saint-Antoine">                             
+                                <h4>Auberge Saint-Antoine</h4>               
+                               <p>Quebec</p>
+                            <p class="price">CA$688~</p>
+                            <p>5.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                                <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom20-->
+                        <li class="accom-card" data-category="NewFoundLand 200 4.5">
+                            <img src="yuuponpon28.github.io/images/AltHotelSt.Johns.png" alt="Alt Hotel St. John's">                               
+                                <h4>Alt Hotel St. John's</h4>               
+                               <p>NewFoundLand</p>
+                            <p class="price">CA$209~</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                                <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>  
+                        <!--Dest21-->
+                        <li class="accom-card" data-category="NewFoundLand 100 4.5">
+                            <img src="yuuponpon28.github.io/images/CarriageHouseInn.png" alt="Carriage House Inn">                              
+                                <h4>Carriage House Inn</h4>               
+                               <p>NewFoundLand</p>
+                            <p class="price">CA$140~</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                                <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom22-->
+                        <li class="accom-card" data-category="NewFoundLand 100 4.5">
+                            <img src="yuuponpon28.github.io/images/HillsideBB.png" alt="Hillside B&B">                               
+                            <h4>Hillside B&B</h4>               
+                            <p>NewFoundLand</p>
+                            <p class="price">CA$126~</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom23-->
+                        <li class="accom-card" data-category="NovaScotia 500 4">
+                            <img src="yuuponpon28.github.io/images/TheLordNelsonHotel.png" alt="The Lord Nelson Hotel & Suites">                               
+                            <h4>The Lord Nelson Hotel & Suites</h4>               
+                            <p>NovaScotia</p>
+                            <p class="price">CA$599~</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom24-->
+                        <li class="accom-card" data-category="NovaScotia 100 4.5">
+                            <img src="yuuponpon28.github.io/images/TruByHiltonYarmouth.png" alt="Tru By Hilton Yarmouth">                               
+                            <h4>Tru By Hilton Yarmouth</h4>               
+                            <p>NovaScotia</p>
+                            <p class="price">CA$188~</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom25-->
+                        <li class="accom-card" data-category="NovaScotia 200 4.5">
+                            <img src="yuuponpon28.github.io/images/NorthStarBeachSuites.png" alt="North Star Beach Suites">                               
+                            <h4>North Star Beach Suites</h4>               
+                            <p>NovaScotia</p>
+                            <p class="price">CA$209~</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom26-->
+                        <li class="accom-card" data-category="BritishColumbia 300 4.5">
+                            <img src="yuuponpon28.github.io/images/BlueHorizonHotel.png" alt="Blue Horizon Hotel">                               
+                            <h4>Blue Horizon Hotel</h4>               
+                            <p>British Columbia</p>
+                            <p class="price">CA$399~</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom27-->
+                        <li class="accom-card" data-category="BritishColumbia 300 4">
+                            <img src="yuuponpon28.github.io/images/EmeraldLakeLodge.png" alt="Emerald Lake Lodge">                               
+                            <h4>Emerald Lake Lodge</h4>               
+                            <p>British Columbia</p>
+                            <p class="price">CA$359~</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom28-->
+                        <li class="accom-card" data-category="BritishColumbia 400 4">
+                            <img src="yuuponpon28.github.io/images/FairmontEmpress.png" alt="Fairmont Empress">                               
+                            <h4>Fairmont Empress</h4>               
+                            <p>BritishColumbia</p>
+                            <p class="price">CA$431~</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom29-->
+                        <li class="accom-card" data-category="Manitoba 200 4.5">
+                            <img src="yuuponpon28.github.io/images/FortGarryHotel.png" alt="Fort Garry Hotel, Spa and Conference Centre">                               
+                            <h4>Fort Garry Hotel, Spa and Conference Centre</h4>               
+                            <p>Manitoba</p>
+                            <p class="price">CA$269~</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom30-->
+                        <li class="accom-card" data-category="Manitoba 100 4">
+                            <img src="yuuponpon28.github.io/images/VictoriaInnHotel.png" alt="Victoria Inn Hotel & Convention Centre">                               
+                            <h4>Victoria Inn Hotel & Convention Centre</h4>               
+                            <p>Manitoba</p>
+                            <p class="price">CA$199~</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom31-->
+                        <li class="accom-card" data-category="NorthWest 200 4">
+                            <img src="yuuponpon28.github.io/images/ExplorerHotel.png" alt="Explorer Hotel">                               
+                            <h4>Explorer Hotel</h4>               
+                            <p>NorthWest</p>
+                            <p class="price">CA$268~</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom32-->
+                        <li class="accom-card" data-category="NorthWest 200 4">
+                            <img src="yuuponpon28.github.io/images/ChateauNovaYellowknife.png" alt="Chateau Nova Yellowknife">                               
+                            <h4>Chateau Nova Yellowknife</h4>               
+                            <p>NorthWest</p>
+                            <p class="price">CA$283~</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom33-->
+                        <li class="accom-card" data-category="NorthWest 100 4">
+                            <img src="yuuponpon28.github.io/images/NovaInnInuvik.png" alt="Nova Inn Inuvik">                               
+                            <h4>Nova Inn Inuvik</h4>               
+                            <p>NorthWest</p>
+                            <p class="price">CA$170~</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom34-->
+                        <li class="accom-card" data-category="Yukon 200 4">
+                            <img src="yuuponpon28.github.io/images/BestWesternGoldRushInn.png" alt="Best Western Gold Rush Inn">                               
+                            <h4>Best Western Gold Rush Inn</h4>               
+                            <p>Yukon</p>
+                            <p class="price">CA$249~</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom35-->
+                        <li class="accom-card" data-category="Yukon 200 4">
+                            <img src="yuuponpon28.github.io/images/SKKYHotel.png" alt="SKKY Hotel">                               
+                            <h4>SKKY Hotel</h4>               
+                            <p>Yukon</p>
+                            <p class="price">CA$212~</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                        <!--Accom36-->
+                        <li class="accom-card" data-category="Yukon 200 4.5">
+                            <img src="yuuponpon28.github.io/images/InnOnTheLake.png" alt="Inn On The Lake">                               
+                            <h4>Inn On The Lake</h4>               
+                            <p>Yukon</p>
+                            <p class="price">CA$299~</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <a href="yuuponpon28.github.io/Booking.html" class="accom-button">Book Now</a> 
+                        </li>
+                </ol>
+            </div>
+
+              
+          </main>
+        </div>
+        <footer class="border-top footer text-muted">
+            <div class="container footerText">
+                &copy; 2023 - U TRAVEL Co., Ltd. -
+            </div>
+        </footer>
+    </div>
+  </body>
+</html>
