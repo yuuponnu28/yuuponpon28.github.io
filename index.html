@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U TRAVEL</title>
+    //Connecting CSS File
+    <link rel="stylesheet" type="text/css" href="yuuponpon28.github.io/css/base.css">
+    <link rel="stylesheet" type="text/css" href="yuuponpon28.github.io/css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="yuuponpon28.github.io/css/site.css">
+    <link rel="stylesheet" type="text/css" href="yuuponpon28.github.io/css/Project6.styles.css">
+   <link rel="stylesheet" type="text/css" href="yuuponpon28.github.io/css/home.css">
+
+    //Font 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Pacifico&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Pacifico&family=Quicksand:wght@300&family=Sriracha&display=swap" rel="stylesheet">
+  //Fontawesome
+   <script src="https://kit.fontawesome.com/be4881beea.js" crossorigin="anonymous"></script>  
+  
+    //A-jax     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">   
+</head>
+  <body>
+    <div class="bg">
+      <header>
+          <div class="newheader">
+              <div class="menubar-top">
+                  <h3>U TRAVEL</h3>
+                  <p>Canadian World Heritage Travel Agency</p>
+              </div>
+          </div>
+          <div class="newheader2">
+              <div class="menubar-bottom">
+                  <a asp-controller="Home" asp-action="Index" id="menucolor">Home</a>
+                  <a asp-controller="Home" asp-action="Destination" id="menucolor">Destination</a>
+                  <a asp-controller="Home" asp-action="Accommodation" id="menucolor">Accommodation</a>
+                  <a asp-controller="Home" asp-action="Cuisine" id="menucolor">Cuisine</a>
+                  <a asp-controller="Home" asp-action="ContactUs" id="menucolor">Contact us</a>
+              </div>
+          </div>
+      </header>
+        <div>
+          <main role="main" class="pb-3">
+            <div class="main">
+              <div class="carousel">
+                <!-- slidelist -->
+                <div class="contains">
+                  <!-- Radio button list -->
+                  <!-- MEMO: First radiobutton = checked-->
+                  <!-- MEMO: id=>different name, name => same -->
+                  <input class="slide_select" type="radio" id="SlideA" name="slide_check" checked />
+                  <input class="slide_select" type="radio" id="SlideB" name="slide_check" />
+                  <input class="slide_select" type="radio" id="SlideC" name="slide_check" />
+                  <input class="slide_select" type="radio" id="SlideD" name="slide_check" />
+                  <!-- slide -->
+                  <div class="slide">
+                    <!-- Scroll button -->
+                    <div class="scroll_controler">
+                      <label class="scroll_button scroll_prev" for="SlideD"></label>
+                      <label class="scroll_button scroll_next" for="SlideB"></label>
+                    </div>
+                    <video src="yuuponpon28.github.io/images/topslide1.mp4" autoplay muted loop playsinlnline></video>
+                  </div>
+                  <div class="slide">
+                    <div class="controler_scroll">
+                      <label class="scroll_button scroll_prev" for="SlideA"></label>
+                      <label class="scroll_button scroll_next" for="SlideC"></label>
+                    </div>
+                    <video src="yuuponpon28.github.io/images/topslide2.mp4" autoplay muted loop playsinlnline></video>
+                  </div>
+                  <div class="slide">
+                    <div class="controler_scroll">
+                      <label class="scroll_button scroll_prev" for="SlideB"></label>
+                      <label class="scroll_button scroll_next" for="SlideD"></label>
+                    </div>
+                    <video src="yuuponpon28.github.io/images/topslide3.mp4" autoplay muted loop playsinlnline></video>
+                  </div>
+                  <div class="slide">
+                    <div class="controler_scroll">
+                      <label class="scroll_button scroll_prev" for="SlideC"></label>
+                      <label class="scroll_button scroll_next" for="SlideA"></label>
+                    </div>
+                    <video src="yuuponpon28.github.io/images/topslide4.mp4" autoplay muted loop playsinlnline></video>
+                  </div>
+                  <!-- Slide moving controller -->
+                  <div class="move_controler">
+                    <label class="button_move" for="SlideA"></label>
+                    <label class="button_move" for="SlideB"></label>
+                    <label class="button_move" for="SlideC"></label>
+                    <label class="button_move" for="SlideD"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="slidecomment">
+                <p>Explore the Heritage of Canada...</p>
+                <a href="yuuponpon28.github.io/Destination.html" type="btn" class="start-btn">Start Explore</a>
+              </div>
+            </div>
+          </main>
+        </div>
+        <footer class="border-top footer text-muted">
+            <div class="container footerText">
+                &copy; 2023 - U TRAVEL Co., Ltd. - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>
+    </div>
+  </body>
+</html>
