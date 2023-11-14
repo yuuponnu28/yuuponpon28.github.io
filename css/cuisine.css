@@ -1,0 +1,436 @@
+/* Carousel */
+.carousel {
+    /* X: center */
+      display: flex;
+      justify-content: center;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-left: 0px;
+      padding-top:10px;
+      
+    }
+    /* Carousel contains */
+    .contains {
+      /* Same size as .slide */
+      width: 1280px;
+      height: 853px;
+      overflow: hidden;
+      position: relative;
+      padding: 0;
+      list-style: none;
+    }
+    /* MEMO: Slide radio button = hidden */
+    .slide_select {
+      display: none;
+    }
+    /* Slide*/
+    
+    .slide {
+      /* Same size as .contains */
+      width: 1280px;
+      height: 853px;
+      position: absolute;
+      /* transparent */
+      opacity: 0; /* basic:0 */
+    }
+    
+    
+    /* Forward & back button */
+    .scroll_button {
+      position: absolute;
+      display: block;
+      height: 30px;
+      width: 30px;
+      top: 50%;
+      margin-top: -20px;
+      border-width: 5px 5px 0 0;
+      border-style: solid;
+      border-color: #1bade6;
+      cursor: pointer;
+      opacity: 0.5; /* basic:0.5 */
+      z-index: 3;
+    }
+    
+    .scroll_button:hover {
+      opacity: 1;
+    }
+    
+    .scroll_prev {
+      left: 15px;
+      transform: rotate(-135deg);
+    }
+    
+    .scroll_next {
+      right: 15px;
+      transform: rotate(45deg);
+    }
+    
+    .move_controler {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Slide moving button */
+    .button_move {
+      display: inline-block;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      border-radius: 100%;
+      cursor: pointer;
+      opacity: 0.5; /* basic:0.5 */
+      z-index: 2;
+    }
+    
+    .button_move:hover {
+      opacity: 0.75;
+    }
+    /* slide moving button color */
+    .button_move {
+      background-color: #1bade6;
+    }
+    
+    .slide_select:nth-of-type(1):checked ~ .slide:nth-of-type(1) {
+      opacity: 1;
+    }
+    
+    .slide_select:nth-of-type(1):checked ~ .move_controler .button_move:nth-of-type(1) {
+      opacity: 1;
+    }
+    .slide_select:nth-of-type(2):checked ~ .slide:nth-of-type(2) {
+      opacity: 1;
+    }
+    .slide_select:nth-of-type(2):checked ~ .move_controler .button_move:nth-of-type(2) {
+      opacity: 1;
+    }
+    .slide_select:nth-of-type(3):checked ~ .slide:nth-of-type(3) {
+      opacity: 1;
+    }
+    .slide_select:nth-of-type(3):checked ~ .move_controler
+      .button_move:nth-of-type(3) {
+      opacity: 1;
+    }
+    .slide_select:nth-of-type(4):checked ~ .slide:nth-of-type(4) {
+      opacity: 1;
+    }
+    .slide_select:nth-of-type(4):checked
+      ~ .move_controler
+      .button_move:nth-of-type(4) {
+      opacity: 1;
+    }
+    
+    .cuisine-title{
+      width:100%;
+      padding:20px;
+    }
+    .cuisine-title p{
+      font-size:3rem;
+      color:white;
+      font-family: 'Caveat', cursive;
+      text-align:center;
+
+    }
+    
+    .slidecomment p{
+      color: white;
+      font-family: 'Caveat', cursive;
+      font-size: 3em;
+    }
+    
+
+    .cuisine-containts{
+      display:flex;
+      margin:0;
+      padding:40px;
+      min-height:100vh;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Sriracha', cursive;
+      color:white;
+    }
+
+    .cuisine{
+      display:flex;
+      flex-direction: row;
+      width:1000px;
+      
+    }
+
+    
+    .cuisine-text{
+      width:70%;
+      word-break: normal;
+      font-size:1.3rem;
+      padding:20px;
+    }
+
+
+    .cuisine-text h4{
+      border-bottom:1px solid white;
+      padding-bottom:10px;
+    }
+    
+    .cuisine-img{
+      width:400px;
+      height:400px;
+      padding:60px 20px 20px 20px;
+    }
+    .cuisine-img img{
+      width:300px;
+      height:300px;
+      object-fit: cover;
+      border-radius: 5px;
+      border:black;
+    }
+
+    .cuisine-btn{
+      border:solid 1px black;
+      color:white;
+      padding:10px;
+      width:150px;
+      height:50px;
+      background-color: #1bade6;
+      text-align: center;
+    }
+
+    .cuisine-btn a{
+      text-decoration: none;
+      color:white; 
+      margin:0 auto;
+      font-size:1.5rem;     
+    }
+
+    .cuisine-btn:hover{
+      background-color: white;
+      color: #1bade6;
+      transform: scale(1.2, 1.2);
+    }
+
+    .cuisine-btn:hover a{
+      color: #1bade6;
+    }
+
+
+    /* Restaurant */
+    .restaurant-list-container{
+      margin:10px auto 0 auto;
+      padding-right:20px;
+      max-width:100%;
+      text-align:center;
+  }
+
+
+  .targets{
+      display: grid;
+      grid-gap: 1.5rem;
+      grid-template-columns: repeat(4, 1fr);
+      padding-top:15px;
+      padding-right:20px;
+  }
+  
+  .restaurant-line{
+      width:100vw;
+      border-top: 2px dashed white;
+  }
+  
+  ol{
+      list-style: none;
+  }
+  
+  
+  .filters{
+      text-align: center;
+      margin-bottom:1rem;
+      margin-top:1rem;
+  }
+  
+  .filters *{
+      display:inline-block;
+  }
+  
+  .filters i{
+      font-size:1.2rem;
+      color:white;
+  }
+  
+  input[type="radio"]{
+      position: absolute;
+      left: -9999px;
+  }
+  
+  .filters label{
+      text-align: center;
+      padding: 0.2rem 0.5rem;
+      margin-bottom: 0.25rem;
+      min-width: 50px;
+      line-height:normal;
+      cursor: pointer;
+      transition: all 0.2s;
+      color:white;
+      font-family: 'Sriracha', cursive;
+  }
+  .filters label i{
+      color:rgb(255, 213, 0);
+  }
+  
+  .filters #allfilter{
+      font-size:1.2rem;
+      font-weight: bold;;
+  }
+  
+  
+  .filters label:hover {
+      background: rgb(2, 140, 215);
+      color: white;
+  }
+  
+  .restaurant-card{
+      background-color:white;
+      box-shadow: 0 10px 20px -10px rgb(49,49,49);
+      font-family: 'Public Sans', sans-serif;
+      text-align:center;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding:5px;
+      align-items: center;
+  }
+  
+  .restaurant-card img{
+      max-width:100%;
+      width:350;
+      height:250px;
+      object-fit: cover;
+  }
+  
+  .restaurant-card h4{
+      font-weight: bold;
+  }
+  .restaurant-card p{
+      word-break:normal;
+  }
+  
+  .restaurant-card .price{
+      font-weight: bold;
+  }
+  
+  .restaurant-card i{
+      color:rgb(255, 213, 0);
+  }
+  
+
+  .restaurant-card .restaurant-button:hover{
+      transform: scale(0.85, 0.85);
+  }
+  
+  
+    /* Filter 1*/
+    [value="All"]:checked ~ .filters [for="All"],
+    [value="Alberta"]:checked ~ .filters [for="Alberta"],
+    [value="Ontario"]:checked ~ .filters [for="Ontario"],
+    [value="Quebec"]:checked ~ .filters [for="Quebec"],
+    [value="NewFoundLand"]:checked ~ .filters [for="NewFoundLand"],
+    [value="NovaScotia"]:checked ~ .filters [for="NovaScotia"],
+    [value="BritishColumbia"]:checked ~ .filters [for="BritishColumbia"],
+    [value="Manitoba"]:checked ~ .filters [for="Manitoba"],
+    [value="NorthWest"]:checked ~ .filters [for="NorthWest"],
+    [value="Yukon"]:checked ~ .filters [for="Yukon"]{
+      background: rgb(0, 166, 255);
+      color: white;
+    }
+  
+    [value="All"]:checked ~ .targets[data-category]{
+      display:block;
+    }
+  
+    [id="Alberta"]:checked ~ .targets >.restaurant-card:not([data-category~="Alberta"]),
+    [id="Ontario"]:checked ~ .targets>.restaurant-card:not([data-category~="Ontario"]),
+    [id="Quebec"]:checked ~ .targets>.restaurant-card:not([data-category~="Quebec"]),
+    [id="NewFoundLand"]:checked ~ .targets>.restaurant-card:not([data-category~="NewFoundLand"]),
+    [id="NovaScotia"]:checked ~ .targets>.restaurant-card:not([data-category~="NovaScotia"]),
+    [id="BritishColumbia"]:checked ~ .targets>.restaurant-card:not([data-category~="BritishColumbia"]),
+    [id="Manitoba"]:checked ~ .targets>.restaurant-card:not([data-category~="Manitoba"]),
+    [id="NorthWest"]:checked ~ .targets>.restaurant-card:not([data-category~="NorthWest"]),
+    [id="Yukon"]:checked ~ .targets>.restaurant-card:not([data-category~="Yukon"]){
+      display:none;
+    }
+  
+    /* Filter 2*/
+    [value="Canadian"]:checked ~ .filters [for="Canadian"],
+    [value="American"]:checked ~ .filters [for="American"],
+    [value="Italian"]:checked ~ .filters [for="Italian"],
+    [value="Indian"]:checked ~ .filters [for="Indian"],
+    [value="Asian"]:checked ~ .filters [for="Asian"],
+    [value="Chinese"]:checked ~ .filters [for="Chinese"],
+    [value="Mediterranean"]:checked ~ .filters [for="Mediterranean"],
+    [value="Bar"]:checked ~ .filters [for="Bar"]
+    [value="FastFood"]:checked ~ .filters [for="FastFood"]{
+      background: rgb(0, 166, 255);
+      color: white;
+    }
+  
+    /* [value="All"]:checked ~ .targets[data-category]{
+      display:block;
+    } */
+  
+    [id="Canadian"]:checked ~ .targets >.restaurant-card:not([data-category~="Canadian"]),
+    [id="American"]:checked ~ .targets>.restaurant-card:not([data-category~="American"]),
+    [id="Italian"]:checked ~ .targets>.restaurant-card:not([data-category~="Italian"]),
+    [id="Indian"]:checked ~ .targets>.restaurant-card:not([data-category~="Indian"]),
+    [id="Asian"]:checked ~ .targets>.restaurant-card:not([data-category~="Asian"]),
+    [id="Chinese"]:checked ~ .targets>.restaurant-card:not([data-category~="Chinese"]),
+    [id="Mediterranean"]:checked ~ .targets>.restaurant-card:not([data-category~="Mediterranean"]),
+    [id="Bar"]:checked ~ .targets>.restaurant-card:not([data-category~="Bar"]),
+    [id="FastFood"]:checked ~ .targets>.restaurant-card:not([data-category~="FastFood"]){
+      display:none;
+    }
+  
+    /* Filter 3*/
+    [value="$"]:checked ~ .filters [for="$"],
+    [value="$$"]:checked ~ .filters [for="$$"],
+    [value="$$$"]:checked ~ .filters [for="$$$"],
+    [value="$$$$"]:checked ~ .filters [for="$$$$"]{
+      background: rgb(0, 166, 255);
+      color: white;
+    }
+  
+    [id="$"]:checked ~ .targets >.restaurant-card:not([data-category~="$"]),
+    [id="$$"]:checked ~ .targets>.restaurant-card:not([data-category~="$$"]),
+    [id="$$$"]:checked ~ .targets>.restaurant-card:not([data-category~="$$$"]),
+    [id="$$$$"]:checked ~ .targets>.restaurant-card:not([data-category~="$$$$"]){
+      display:none;
+    }
+
+    /* Filter 4*/
+    [value="3.5"]:checked ~ .filters [for="3.5"],
+    [value="4"]:checked ~ .filters [for="4"],
+    [value="4.5"]:checked ~ .filters [for="4.5"],
+    [value="5"]:checked ~ .filters [for="5"]{
+      background: rgb(0, 166, 255);
+      color: white;
+    }
+  
+    [id="3.5"]:checked ~ .targets >.restaurant-card:not([data-category~="3.5"]),
+    [id="4"]:checked ~ .targets>.restaurant-card:not([data-category~="4"]),
+    [id="4.5"]:checked ~ .targets>.restaurant-card:not([data-category~="4.5"]),
+    [id="5"]:checked ~ .targets>.restaurant-card:not([data-category~="5"]){
+      display:none;
+    }
+  
+    /* Media query */
+    @media screen and (max-width: 900px){
+      .targets{
+          grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  
+    @media screen and (max-width: 650px){
+      html{
+          font-size: 14px;
+      }
+      .targets{
+          grid-template-columns: repeat(2, 1fr);
+      }
+    }

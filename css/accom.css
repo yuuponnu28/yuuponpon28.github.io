@@ -1,0 +1,226 @@
+.accom-title{
+    display: flex;
+    justify-content: center;
+    margin-top:40px;
+}
+h2{
+    width:800px;
+    font-family: 'Sriracha', cursive;
+    text-align: center;
+    color:white;
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+    padding-top:7px;
+    padding-bottom:15px;
+    
+}
+
+.accom-list-container{
+    margin:10px auto 0 auto;
+    padding-right:20px;
+    max-width:100%;
+    text-align:center;
+}
+.targets{
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top:15px;
+    padding-right:20px;
+}
+
+.accom-line{
+    width:100vw;
+    border-top: 2px dashed white;
+}
+
+ol{
+    list-style: none;
+}
+
+
+.filters{
+    text-align: center;
+    margin-bottom:1rem;
+}
+
+.filters *{
+    display:inline-block;
+}
+
+.filters i{
+    font-size:1.2rem;
+    color:white;
+}
+
+input[type="radio"]{
+    position: absolute;
+    left: -9999px;
+}
+
+.filters label{
+    text-align: center;
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 0.25rem;
+    min-width: 50px;
+    line-height:normal;
+    cursor: pointer;
+    transition: all 0.2s;
+    color:white;
+    font-family: 'Sriracha', cursive;
+}
+.filters label i{
+    color:rgb(255, 213, 0);
+}
+
+.filters #allfilter{
+    font-size:1.2rem;
+    font-weight: bold;;
+}
+
+
+.filters label:hover {
+    background: rgb(2, 140, 215);
+    color: white;
+}
+
+.accom-card{
+    background-color:white;
+    box-shadow: 0 10px 20px -10px rgb(49,49,49);
+    font-family: 'Public Sans', sans-serif;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:5px;
+    align-items: center;
+}
+
+.accom-card img{
+    max-width:100%;
+}
+
+.accom-card h4{
+    font-weight: bold;
+}
+.accom-card p{
+    word-break:normal;
+}
+
+.accom-card .price{
+    font-weight: bold;
+}
+
+.accom-card i{
+    color:rgb(255, 213, 0);
+}
+
+.accom-card .accom-button{
+    background-color:rgb(0, 166, 255);
+    border:solid 1px rgb(0, 166, 255);
+    border-radius: 5px;
+    padding:5px;
+    width:60%;
+    text-decoration: none;
+    text-align: center;
+    color:white;
+    margin-bottom:10px;
+}
+
+.accom-card .accom-button:hover{
+    transform: scale(0.85, 0.85);
+}
+
+@keyframes fadein{
+    0% {opacity: 0}
+    100% {opacity: 0.8}
+  }
+
+  /* Filter 1*/
+  [value="All"]:checked ~ .filters [for="All"],
+  [value="Alberta"]:checked ~ .filters [for="Alberta"],
+  [value="Ontario"]:checked ~ .filters [for="Ontario"],
+  [value="Quebec"]:checked ~ .filters [for="Quebec"],
+  [value="NewFoundLand"]:checked ~ .filters [for="NewFoundLand"],
+  [value="NovaScotia"]:checked ~ .filters [for="NovaScotia"],
+  [value="BritishColumbia"]:checked ~ .filters [for="BritishColumbia"],
+  [value="Manitoba"]:checked ~ .filters [for="Manitoba"],
+  [value="NorthWest"]:checked ~ .filters [for="NorthWest"],
+  [value="Yukon"]:checked ~ .filters [for="Yukon"]{
+    background: rgb(0, 166, 255);
+    color: white;
+  }
+
+  [value="All"]:checked ~ .targets[data-category]{
+    display:block;
+  }
+
+  [id="Alberta"]:checked ~ .targets >.accom-card:not([data-category~="Alberta"]),
+  [id="Ontario"]:checked ~ .targets>.accom-card:not([data-category~="Ontario"]),
+  [id="Quebec"]:checked ~ .targets>.accom-card:not([data-category~="Quebec"]),
+  [id="NewFoundLand"]:checked ~ .targets>.accom-card:not([data-category~="NewFoundLand"]),
+  [id="NovaScotia"]:checked ~ .targets>.accom-card:not([data-category~="NovaScotia"]),
+  [id="BritishColumbia"]:checked ~ .targets>.accom-card:not([data-category~="BritishColumbia"]),
+  [id="Manitoba"]:checked ~ .targets>.accom-card:not([data-category~="Manitoba"]),
+  [id="NorthWest"]:checked ~ .targets>.accom-card:not([data-category~="NorthWest"]),
+  [id="Yukon"]:checked ~ .targets>.accom-card:not([data-category~="Yukon"]){
+    display:none;
+  }
+
+  /* Filter 2*/
+  [value="10"]:checked ~ .filters [for="10"],
+  [value="100"]:checked ~ .filters [for="100"],
+  [value="200"]:checked ~ .filters [for="200"],
+  [value="300"]:checked ~ .filters [for="300"],
+  [value="400"]:checked ~ .filters [for="400"],
+  [value="500"]:checked ~ .filters [for="500"],
+  [value="600"]:checked ~ .filters [for="600"]{
+    background: rgb(0, 166, 255);
+    color: white;
+  }
+
+  /* [value="All"]:checked ~ .targets[data-category]{
+    display:block;
+  } */
+
+  [id="10"]:checked ~ .targets >.accom-card:not([data-category~="10"]),
+  [id="100"]:checked ~ .targets>.accom-card:not([data-category~="100"]),
+  [id="200"]:checked ~ .targets>.accom-card:not([data-category~="200"]),
+  [id="300"]:checked ~ .targets>.accom-card:not([data-category~="300"]),
+  [id="400"]:checked ~ .targets>.accom-card:not([data-category~="400"]),
+  [id="500"]:checked ~ .targets>.accom-card:not([data-category~="500"]),
+  [id="600"]:checked ~ .targets>.accom-card:not([data-category~="600"]){
+    display:none;
+  }
+
+  /* Filter 3*/
+  [value="3"]:checked ~ .filters [for="3"],
+  [value="4"]:checked ~ .filters [for="4"],
+  [value="4.5"]:checked ~ .filters [for="4.5"],
+  [value="5"]:checked ~ .filters [for="5"]{
+    background: rgb(0, 166, 255);
+    color: white;
+  }
+
+  [id="3"]:checked ~ .targets >.accom-card:not([data-category~="3"]),
+  [id="4"]:checked ~ .targets>.accom-card:not([data-category~="4"]),
+  [id="4.5"]:checked ~ .targets>.accom-card:not([data-category~="4.5"]),
+  [id="5"]:checked ~ .targets>.accom-card:not([data-category~="5"]){
+    display:none;
+  }
+
+  /* Media query */
+  @media screen and (max-width: 900px){
+    .targets{
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 650px){
+    html{
+        font-size: 14px;
+    }
+    .targets{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }

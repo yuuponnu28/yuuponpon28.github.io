@@ -1,0 +1,175 @@
+.dest-top{
+    position:relative;
+}
+.dest-top .dest-top-img{
+    background-image:url("/images/quebeccity.png");
+    width:100%;
+    height:750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0;
+}
+.dest-top .dest-top-text{
+    width: 500px;
+    height: 200px;
+    background-color: rgb(60, 182, 60);
+    position: absolute;
+    top:30%;
+    left:80%;
+    transform: translate(-50%, -50%);  
+    padding:0;
+    margin:0;
+    animation: fadein 3s ease-out forwards;  
+    color: white;
+    text-align: center;
+    padding:20px;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.dest-top .dest-top-text p{
+    font-size:1em;
+}
+
+.dest-center-text{
+    width:300px;
+    padding-top:15px;
+    margin:0 auto;
+    font-family: 'Quicksand', sans-serif;    
+}
+.dest-center-text h2{
+    padding: 0.3em 0;
+    border-top: solid 2px white; 
+    border-bottom: solid 2px white;
+    color: white;
+    text-align: center;
+    
+}
+
+.dest-list-container{
+    margin:10px auto 0 auto;
+    padding-right:20px;
+    max-width:100%;
+    text-align:center;
+}
+.targets{
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+ol{
+    list-style: none;
+}
+
+
+.filters{
+    text-align: center;
+    margin-bottom:2rem;
+}
+
+.filters *{
+    display:inline-block;
+}
+
+.filters i{
+    color:rgb(0, 102, 255)
+}
+
+input[type="radio"]{
+    position: absolute;
+    left: -9999px;
+}
+
+.filters label{
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 0.25rem;
+    min-width: 50px;
+    line-height:normal;
+    cursor: pointer;
+    transition: all 0.2s;
+    color:white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.filters label:hover {
+    background: rgb(0, 166, 255);
+    color: white;
+}
+
+.dest-card{
+    background-color:white;
+    box-shadow: 0 10px 20px -10px rgb(49,49,49);
+    font-family: 'Public Sans', sans-serif;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:5px;
+}
+
+.dest-card img{
+    max-width:100%;
+}
+
+.dest-card h5{
+    font-weight: bold;
+}
+.dest-card p{
+    color:rgb(9,144,202);
+    word-break:normal;
+}
+
+
+@keyframes fadein{
+    0% {opacity: 0}
+    100% {opacity: 0.8}
+  }
+
+  /* Filter */
+  [value="All"]:checked ~ .filters [for="All"],
+  [value="Alberta"]:checked ~ .filters [for="Alberta"],
+  [value="Ontario"]:checked ~ .filters [for="Ontario"],
+  [value="Quebec"]:checked ~ .filters [for="Quebec"],
+  [value="NewFoundLand"]:checked ~ .filters [for="NewFoundLand"],
+  [value="NovaScotia"]:checked ~ .filters [for="NovaScotia"],
+  [value="BritishColumbia"]:checked ~ .filters [for="BritishColumbia"],
+  [value="Manitoba"]:checked ~ .filters [for="Manitoba"],
+  [value="NorthWest"]:checked ~ .filters [for="NorthWest"],
+  [value="Yukon"]:checked ~ .filters [for="Yukon"]{
+    background: rgb(0, 166, 255);
+    color: white;
+  }
+
+  [value="All"]:checked ~ .targets[data-category]{
+    display:block;
+  }
+
+  [id="Alberta"]:checked ~ .targets >.dest-card:not([data-category~="Alberta"]),
+  [id="Ontario"]:checked ~ .targets>.dest-card:not([data-category~="Ontario"]),
+  [id="Quebec"]:checked ~ .targets>.dest-card:not([data-category~="Quebec"]),
+  [id="NewFoundLand"]:checked ~ .targets>.dest-card:not([data-category~="NewFoundLand"]),
+  [id="NovaScotia"]:checked ~ .targets>.dest-card:not([data-category~="NovaScotia"]),
+  [id="BritishColumbia"]:checked ~ .targets>.dest-card:not([data-category~="BritishColumbia"]),
+  [id="Manitoba"]:checked ~ .targets>.dest-card:not([data-category~="Manitoba"]),
+  [id="NorthWest"]:checked ~ .targets>.dest-card:not([data-category~="NorthWest"]),
+  [id="Yukon"]:checked ~ .targets>.dest-card:not([data-category~="Yukon"]){
+    display:none;
+  }
+
+  /* Media query */
+  @media screen and (max-width: 900px){
+    .targets{
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 650px){
+    html{
+        font-size: 14px;
+    }
+    .targets{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }

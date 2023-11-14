@@ -1,0 +1,68 @@
+.book-top{
+    width:100%;
+    height:1000px;
+    padding-top:50px;
+    font-family: 'Sriracha', cursive;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.book-form{
+    width:900px;
+    background-color: white;
+    height:900px;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.book-top img{
+    width:300px;
+    height:300px;
+}
+
+.title{
+    border-top: solid 2px #349ecc;
+    border-bottom: solid 2px #349ecc;
+    padding-top: 7px;
+    padding-bottom:7px;
+    margin-top:50px;
+    margin-bottom:20px;    
+    color:#349ecc;
+    width:700px;
+}
+
+.title-confirm{
+    padding-top: 7px;
+    padding-bottom:7px;
+    margin-top:50px;
+    margin-bottom:20px;    
+    color:#349ecc;
+    width:700px;
+    text-align: center;
+}
+
+.input-box{
+    text-align:center;
+}
+
+.input-box input{
+   width: 400px;
+}
+.input-box td{
+    height:50px;
+    padding:10px;
+}
+
+.input-box .error{
+    color:red;
+    font-size:0.8rem;
+}
+
+.input-box #submit{
+    width:100px;
+    background-color: #349ecc;
+    border:solid 3px white;
+    color:white;
+
+}
