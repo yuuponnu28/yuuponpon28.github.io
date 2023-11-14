@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U TRAVEL</title>
+    
+    <link rel="stylesheet" type="text/css" href="yuuponpon28.github.io/css/base.css">
+    <link rel="stylesheet" type="text/css" href="yuuponpon28.github.io/css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="yuuponpon28.github.io/css/site.css">
+    <link rel="stylesheet" type="text/css" href="yuuponpon28.github.io/css/home.css">
+    <link rel="stylesheet" type="text/css" href="yuuponpon28.github.io/css/details.css">
+    <link rel="stylesheet" type="text/css" href="yuuponpon28.github.io/css/cuisine.css">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Pacifico&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Pacifico&family=Quicksand:wght@300&family=Sriracha&display=swap" rel="stylesheet">
+ 
+   <script src="https://kit.fontawesome.com/be4881beea.js" crossorigin="anonymous"></script>  
+  
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">   
+</head>
+  <body>
+    <div class="bg">
+      <header>
+          <div class="newheader">
+              <div class="menubar-top">
+                  <h3>U TRAVEL</h3>
+                  <p>Canadian World Heritage Travel Agency</p>
+              </div>
+          </div>
+          <div class="newheader2">
+              <div class="menubar-bottom">
+                  <a href="yuuponpon28.github.io/index.html" id="menucolor">Home</a>
+                  <a href="yuuponpon28.github.io/Destination.html" id="menucolor">Destination</a>
+                  <a href="yuuponpon28.github.io/Accommodation.html" id="menucolor">Accommodation</a>
+                  <a href="yuuponpon28.github.io/Cuisine.html" id="menucolor">Cuisine</a>
+                  <a href="yuuponpon28.github.io/ContactUs.html" id="menucolor">Contact us</a>
+              </div>
+          </div>
+      </header>
+        <div>
+          <main role="main" class="pb-3">
+
+              
+            <div class="restaurant-list-container">
+                    <form action="Restaurant" method="get">
+                        <input type="search" name="search" placeholder="Input keyword">
+                        <input type ="submit" name ="submit" value="search">
+                    </form>
+            
+                    <input type="radio" id="All" name="categories" value="All" checked>
+                    <ol class="filters">
+                        <li><i class="fa-solid fa-filter"></i></li>
+                        <li><label for="All" id="allfilter">All</label></li>
+                    </ol>
+                    
+                    <input type="radio" id="Alberta" name="categories" value="Alberta">
+                    <input type="radio" id="Ontario" name="categories" value="Ontario">
+                    <input type="radio" id="Quebec" name="categories" value="Quebec">
+                    <input type="radio" id="NewFoundLand" name="categories" value="New Found Land">
+                    <input type="radio" id="NovaScotia" name="categories" value="Nova Scotia">
+                    <input type="radio" id="BritishColumbia" name="categories" value="British Columbia">
+                    <input type="radio" id="Manitoba" name="categories" value="Manitoba">
+                    <input type="radio" id="NorthWest" name="categories" value="Northwest Territories">
+                    <input type="radio" id="Yukon" name="categories" value="Yukon">
+                    <ol class="filters">
+                        <li><label for="Alberta">Alberta</label></li>
+                        <li><label for="Ontario">Ontario</label></li>
+                        <li><label for="Quebec">Quebec</label></li>
+                        <li><label for="NewFoundLand">NewFoundLand</label></li>
+                        <li><label for="NovaScotia">Nova Scotia</label></li>
+                        <li><label for="BritishColumbia">British Columbia</label></li>
+                        <li><label for="Manitoba">Manitoba</label></li>
+                        <li><label for="NorthWest">NorthWest</label></li>
+                        <li><label for="Yukon">Yukon</label></li>
+                    </ol>
+            
+                    <input type="radio" id="Canadian" name="categories" value="Canadian">
+                    <input type="radio" id="American" name="categories" value="American">
+                    <input type="radio" id="Italian" name="categories" value="Italian"> 
+                    <input type="radio" id="Indian" name="categories" value="Indian">
+                    <input type="radio" id="Asian" name="categories" value="Asian">
+                    <input type="radio" id="Chinese" name="categories" value="Chinese">
+                    <input type="radio" id="Mediterranean" name="categories" value="Mediterranean">
+                    <input type="radio" id="Bar" name="categories" value="Bar">   
+                    <input type="radio" id="FastFood" name="categories" value="FastFood">      
+                    <ol class="filters">           
+                        <li><label for="Canadian">Canadian</label></li>
+                        <li><label for="American">American</label></li>
+                        <li><label for="Italian">Italian</label></li>
+                        <li><label for="Indian">Indian</label></li>
+                        <li><label for="Indian">French</label></li>
+                        <li><label for="Asian">Asian</label></li>
+                        <li><label for="Chinese">Chinese</label></li>
+                        <li><label for="Mediterranean">Mediterranean</label></li>
+                        <li><label for="Bar">Bar</label></li>
+                        <li><label for="FastFood">Fast Food</label></li>
+                    </ol>
+            
+                    <input type="radio" id="$" name="categories" value="$">
+                    <input type="radio" id="$$" name="categories" value="$$">
+                    <input type="radio" id="$$$" name="categories" value="$$$"> 
+                    <input type="radio" id="$$$$" name="categories" value="$$$$">      
+                    <ol class="filters">           
+                        <li><label for="$">$</label></li>
+                        <li><label for="$$">$$</label></li>
+                        <li><label for="$$$">$$$</label></li>
+                        <li><label for="$$$$">$$$$</label></li>
+                    </ol>
+                    
+                    <input type="radio" id="3.5" name="categories" value="3.5">
+                    <input type="radio" id="4" name="categories" value="4">
+                    <input type="radio" id="4.5" name="categories" value="4.5">
+                    <input type="radio" id="5" name="categories" value="5">
+                    <ol class="filters">
+                        
+                        <li><label for="3.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></label></li>
+                        <li><label for="4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></label></li>
+                        <li><label for="4.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></label></li>
+                        <li><label for="5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></label></li>
+                    </ol>
+                <div class="restaurant-line"></div>
+                <ol class="targets">
+                     <!--Shop1-->
+                    <li class="restaurant-card" data-category="Alberta American $$ $$$ 4.5">
+                            <img src="yuuponpon28.github.io/images/Dadeo_Diner_and_Bar.jpg" alt="Dadeo Diner and Bar">
+                            <h4>Dadeo Diner and Bar</h4> 
+                            <p>Alberta</p>
+                            <p>American</p>
+                            <p class="price">$$-$$$</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <p><a href="http://dadeo.ca/menu/">Website</a></p>           
+                    </li>
+                     <!--Shop2-->
+                    <li class="restaurant-card" data-category="Alberta American FastFood $$ $$$ 4.5">            
+                            <img src="yuuponpon28.github.io/images/JACKs_Burger_Shack.jpg" alt="JACK's Burger Shack">            
+                            <h4>JACK's Burger Shack</h4>               
+                           <p>Alberta</p>
+                           <p>First food, American</p>
+                            <p class="price">$$-$$$</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <p><a href="https://www.jacksburgershack.ca/">Website</a></p>            
+                    </li>
+                    <!--Shop3-->
+                   <li class="restaurant-card" data-category="Alberta Indian $$ $$$ 4.5">            
+                            <img src="yuuponpon28.github.io/images/Guru_Restaurant_Bar.jpg" alt="Guru Restaurant & Bar">                            
+                            <h4>Guru Restaurant & Bar</h4>               
+                           <p>Alberta</p>
+                           <p>Indian</p>
+                            <p class="price">$$-$$$</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <p><a href="http://gururestaurant.com/">Website</a></p>            
+                    </li>     
+                    <!--Shop4-->
+                    <li class="restaurant-card" data-category="Alberta FastFood $ 4">            
+                            <img src="yuuponpon28.github.io/images/MarcosFamous.jpg" alt="Marcos Famous">                           
+                            <h4>Marcos Famous</h4>               
+                           <p>Alberta</p>
+                           <p>Fast Food</p>
+                            <p class="price">$</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><a href="https://marcosfamous.net/">Website</a></p>           
+                    </li>  
+                    <!--Shop5-->
+                    <li class="restaurant-card" data-category="Alberta American $ 4.5">            
+                            <img src="yuuponpon28.github.io/images/MyfriesPoutinerie.jpg" alt="Myfries Poutinerie">            
+                            <h4>Myfries Poutinerie</h4>               
+                           <p>Alberta</p>
+                           <p>American</p>
+                            <p class="price">$</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <p><a href="https://myfries.ca/">Website</a></p>
+                    </li>
+                    <!--Shop6-->
+                    <li class="restaurant-card" data-category="Ontario Chinese Asian $$ $$$ 4">            
+                            <img src="yuuponpon28.github.io/images/Panda_Inn.jpg" alt="Panda Inn Restaurant - Ontario">            
+                            <h4>Panda Inn Restaurant - Ontario</h4>               
+                           <p>Ontario</p>
+                           <p>Chinese, Asian</p>
+                            <p class="price">$$-$$$</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><a href="https://www.pandainn.com/menu/">Website</a></p>               
+                    </li>
+                    <!--Shop7-->
+                    <li class="restaurant-card" data-category="Ontario American $$$$ 4.5">            
+                            <img src="yuuponpon28.github.io/images/Flemings_Prime_Steakhouse.jpg" alt="Fleming's Prime Steakhouse & Wine Bar">            
+                            <h4>Fleming's Prime Steakhouse & Wine Bar</h4>               
+                           <p>Ontario</p>
+                           <p>American</p>
+                            <p class="price">$$$$</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <p><a href="https://www.flemingssteakhouse.com/Locations/CA/Rancho-Cucamonga?y_source=1_MTU1MDMxOTYtNzY5LWxvY2F0aW9uLndlYnNpdGU%3D">Website</a></p> 
+                    </li>
+                    <!--Shop8-->
+                        <li class="restaurant-card" data-category="Ontario American Bar $$ $$$ 4.5">
+                            <img src="yuuponpon28.github.io/images/spread-food-lazy-dog.jpg" alt="Lazy Dog Restaurant & Bar">                                
+                                <h4>Lazy Dog Restaurant & Bar</h4>               
+                               <p>Ontario</p>
+                               <p>American, Bar</p>
+                            <p class="price">$$-$$$</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <p><a href="https://www.lazydogrestaurants.com/menu">Website</a></p> 
+                        </li>
+                        <!--Shop9-->
+                        <li class="restaurant-card" data-category="Ontario American $ 4.5">
+                            <img src="yuuponpon28.github.io/images/Zekes_Eatin_Place.jpg" alt="Zeke's Eatin' Place">                                
+                                <h4>Zeke's Eatin' Place</h4>               
+                               <p>Ontario</p>
+                               <p>American</p>
+                            <p class="price">$</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <p><a href="https://www.instagram.com/zekes_eatin_place/">Instagram</a></p> 
+                        </li>
+                        <!--Shop10-->
+                        <li class="restaurant-card" data-category="Ontario Italian $$ $$$ 4.5">
+                            <img src="yuuponpon28.github.io/images/VincesSpaghetti.jpg" alt="Vince's Spaghetti">                                
+                                <h4>Vince's Spaghetti</h4>               
+                               <p>Ontario</p>
+                               <p>Italian</p>
+                            <p class="price">$$-$$$</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <p><a href="https://www.vincesspaghettiroute66.com/">Website</a></p> 
+                        </li>
+                        <!--Shop11-->
+                        <li class="restaurant-card" data-category="Quebec Mediterranean $ 5">
+                            <img src="yuuponpon28.github.io/images/Bachir.jpg" alt="Bachir">                                
+                            <h4>Bachir</h4>               
+                            <p>Quebec</p>
+                            <p>Mediterranean</p>
+                            <p class="price">$</p>
+                            <p>5.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                            <p><a href="https://www.resto-bachir.com/">Website</a></p> 
+                        </li>
+                        <!--Shop12-->
+                        <li class="restaurant-card" data-category="Quebec Canadian $$$$ 5">
+                            <img src="yuuponpon28.github.io/images/lataniere.jpg" alt="Restaurant Taniere">                               
+                            <h4>Restaurant Taniere</h4>               
+                            <p>Quebec</p>
+                            <p>Canadian</p>
+                            <p class="price">$$$$</p>
+                            <p>5.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><a href="https://taniere3.com/">Website</a></p> 
+                        </li>
+                        <!--Shop13-->
+                        <li class="restaurant-card" data-category="Quebec French Canadian $$ $$$ 4.5">
+                            <img src="yuuponpon28.github.io/images/BistroLaCohue.jpg" alt="Bistro La Cohue">                             
+                                <h4>Bistro La Cohue</h4>               
+                               <p>Quebec</p>
+                               <p>French, Canadian</p>
+                            <p class="price">$$-$$$</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <p><a href="https://bistrolacohue.com/">Website</a></p> 
+                        </li>
+                        <!--Shop14-->
+                        <li class="restaurant-card" data-category="Quebec Canadian $$$$ 4.5">
+                            <img src="yuuponpon28.github.io/images/Laurie_Raphaël.jpg" alt="Laurie Raphaël">                          
+                                <h4>Laurie Raphaël</h4>               
+                               <p>Quebec</p>
+                               <p>Canadian</p>
+                            <p class="price">$$$$</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <p><a href="https://laurieraphael.com/">Website</a></p> 
+                        </li>
+                        <!--Shop15-->
+                        <li class="restaurant-card" data-category="Quebec Bar Canadian $$ $$$ 5">
+                            <img src="yuuponpon28.github.io/images/BeClub.jpg" alt="Beclub Bistro Bar">                               
+                                <h4>Beclub Bistro Bar</h4>               
+                               <p>Quebec</p>
+                               <p>Bar, Canadian</p>
+                            <p class="price">$$-$$$</p>
+                            <p>5.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><a href="https://www.beclub.ca/Menu_food.pdf">Website</a></p>     
+                        </li>
+                        <!--Shop16-->
+                        <li class="restaurant-card" data-category="NewFoundLand Canadian $$$ 4.5">
+                            <img src="yuuponpon28.github.io/images/Portage.jpg" alt="Portage">                              
+                                <h4>Portage</h4>               
+                               <p>NewFoundLand</p>
+                               <p>Canadian</p>
+                            <p class="price">$$$</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                             <p><a href="https://www.portagenl.ca/">Website</a></p>   
+                        </li>
+                        <!--Shop17-->
+                        <li class="restaurant-card" data-category="NewFoundLand Spanish $$ 4">
+                            <img src="yuuponpon28.github.io/images/BocaTapasBar.jpg" alt="Boca Tapas Bar">                               
+                                <h4>Boca Tapas Bar</h4>               
+                               <p>NewFoundLand</p>
+                               <p>Spanish</p>
+                            <p class="price">$$</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                            <p><a href="https://www.bocatapasbar.com/amigos-harbour-cruise">Website</a></p>   
+                        </li>
+                        <!--Shop18-->
+                        <li class="restaurant-card" data-category="NovaScotia Canadian $$$ 5">
+                            <img src="yuuponpon28.github.io/images/Stories.jpg" alt="Stories - Casual Fine Dining - Halifax">                              
+                                <h4>Stories - Casual Fine Dining - Halifax</h4>               
+                               <p>NovaScotia</p>
+                               <p>Canadian</p>
+                            <p class="price">$$$</p>
+                            <p>5.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><a href="https://storiesdining.com/">Website</a></p>    
+                        </li>
+                        <!--Shop19-->
+                        <li class="restaurant-card" data-category="NovaScotia American $$ 5">
+                            <img src="yuuponpon28.github.io/images/MoxiesGrill.jpg" alt="Moxie's Grill & Bar - Bayers Lake">                             
+                                <h4>Moxie's Grill & Bar - Bayers Lake</h4>               
+                               <p>NovaScotia</p>
+                               <p>American</p>
+                            <p class="price">$$</p>
+                            <p>5.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><a href="https://moxies.com/restaurants/halifax-bayers-lake">Website</a></p>     
+                        </li>
+                        <!--Shop20-->
+                        <li class="restaurant-card" data-category="BritishColumbia Mediterranean $$ $$$ 5">
+                            <img src="yuuponpon28.github.io/images/Hydra.jpg" alt="Hydra Estiatorio Mediterranean">                               
+                                <h4>Hydra Estiatorio Mediterranean</h4>               
+                               <p>British Columbia</p>
+                               <p>Mediterranean</p>
+                            <p class="price">$$-$$$</p>
+                            <p>5.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <p><a href="https://hydravancouver.com/">Website</a></p>    
+                        </li>  
+                        <!--Shop21-->
+                        <li class="restaurant-card" data-category="BritishColumbia French $$-$$$ French">
+                            <img src="yuuponpon28.github.io/images/Alouette.jpg" alt="Alouette Bistro">                              
+                                <h4>Alouette Bistro</h4>               
+                               <p>British Columbia</p>
+                               <p>French</p>
+                            <p class="price">$$-$$$</p>
+                            <p>5.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                             <p><a href="https://alouettevancouver.com/">Website</a></p>    
+                        </li>
+                        <!--Shop22-->
+                        <li class="restaurant-card" data-category="Manitoba French $$$$ 3.5">
+                            <img src="yuuponpon28.github.io/images/VinMonLapin.jpg" alt="Vin Mon Lapin">                               
+                            <h4>Vin Mon Lapin</h4>               
+                            <p>Manitoba</p>
+                               <p>French</p>
+                            <p class="price">$$$$</p>
+                            <p>3.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <p><a href="https://www.cntraveler.com/restaurants/montreal/vin-mon-lapin">Website</a></p> 
+                        </li>
+                        <!--Shop23-->
+                        <li class="restaurant-card" data-category="Manitoba Canadian $$ $$$ 4.5">
+                            <img src="yuuponpon28.github.io/images/Clementine.jpg" alt="Clementine">                               
+                            <h4>Clementine</h4>               
+                            <p>Manitoba</p>
+                               <p>Canadian</p>
+                            <p class="price">$$-$$$</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                            <p><a href="https://www.instagram.com/clementine.winnipeg/?hl=ja">Instagram</a></p> 
+                        </li>
+                        <!--Accom24-->
+                        <li class="restaurant-card" data-category="NorthWest American Canadian $$ $$$ 4">
+                            <img src="yuuponpon28.github.io/images/BullocksBistro.jpg" alt="Bullock's Bistro">                               
+                            <h4>Bullock's Bistro</h4>               
+                            <p>NorthWest</p>
+                               <p>American, Canadian</p>
+                            <p class="price">$$-$$$</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><a href="https://www.pagesjaunes.ca/bus/Territoires-du-Nord-Ouest/Yellowknife/Bullock-s-Bistro/7276595.html;JSESSIONID=09280D4D27ED793D2B87CCE0295AF3E3">Website</a></p> 
+                        </li>
+                        <!--Shop-->
+                        <li class="restaurant-card" data-category="NorthWest Canadian $$ $$$ 4">
+                            <img src="yuuponpon28.github.io/images/Copperhouse.jpg" alt="Copperhouse">                               
+                            <h4>Copperhouse</h4>               
+                            <p>NorthWest</p>
+                               <p>Canadian</p>
+                            <p class="price">$$-$$$</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><a href="https://www.copperhouse.ca/">Website</a></p> 
+                        </li>
+                        <!--Shop26-->
+                        <li class="restaurant-card" data-category="Yukon Canadian $ $$ 4">
+                            <img src="yuuponpon28.github.io/images/WolfsDenRestaurant.jpg" alt="Wolf's Den Restaurant & Offsales">                               
+                            <h4>Wolf's Den Restaurant & Offsales</h4>               
+                            <p>Yukon</p>
+                               <p>Canadian</p>
+                            <p class="price">$$-$$$</p>
+                            <p>4.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><a href="https://wolfsden.ca/">Website</a></p> 
+                        </li>
+                        <!--Shop27-->
+                        <li class="restaurant-card" data-category="Yukon Asian $$ $$$ 4.5">
+                            <img src="yuuponpon28.github.io/images/ChefAngelo.jpg" alt="Chef Angelo">                               
+                            <h4>Chef Angelo</h4>               
+                            <p>Yukon</p>
+                               <p>Asian</p>
+                            <p class="price">$$-$$$</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            <p><a href="https://www.facebook.com/people/Chef-Angelo/100063721533523/">Website</a></p> 
+                        </li>
+                </ol>
+            </div>
+
+              
+          </main>
+        </div>
+        <footer class="border-top footer text-muted">
+            <div class="container footerText">
+                &copy; 2023 - U TRAVEL Co., Ltd. -
+            </div>
+        </footer>
+    </div>
+  </body>
+</html>
